@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    /* width: 100%; */
+    /* height: 20vh; */
+    background-color: aqua;
+    text-align: center;
+    /* background-image: url(/OIP.jpeg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: darkblue;
+}
+b{
+    /* position: relative; */
+    top: 1em;
+    font-size: 50px;
+}
+#logo{
+    width: 15vw;
+    height: 15vh;
+    position: relative;
+    left: 3em;
+}
+#cars-video{
+    width: 80vw;
+    text-align: center;
+    border-radius: 15px;
+    /* display: grid; */
+    /* grid-template-columns: 1000px; */
+
+}
+.video{
+    text-align: center;
+    grid-template-columns: 100vw;
+
+}
+.images{
+    display: grid;
+    grid-template-columns: 250px 300px 300px 200px;
+    column-gap: 20px;
+
+}
+@media only screen and (max-width: 600px){
+    /* nav{width: 786px;} */
+    nav{display: none;}
+    .images{
+        grid-template-columns: repeat(2,200px);
+    }
+    .logo{
+        max-width: 600px;
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 460px){
+    .images{
+        grid-template-columns: repeat(1,200px);
+    }
+}
+
